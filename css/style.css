@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #6d4824;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #ffffff; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.abel {
+  font-family: 'Abel', sans-serif; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+/* Header
+------------------------------------------------------------*/
+.box {
+  background-image: url("../images/lesson7-kadai.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+  @media (max-width: 768px) {
+    .box {
+      height: 250px; } }
+
+.title {
+  color: #6d4824;
+  font-size: 4.2rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 3.2;
+  letter-spacing: 0.1em;
+  text-align: center; }
+
+main #explain {
+  margin-bottom: 30px; }
+  @media (max-width: 768px) {
+    main #explain {
+      margin-bottom: 10px; } }
+  main #explain .container {
+    display: flex;
+    justify-content: space-around; }
+    @media (max-width: 768px) {
+      main #explain .container {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%; } }
+    main #explain .container .pack {
+      width: 30%;
+      background: #ebdec3; }
+      @media (max-width: 768px) {
+        main #explain .container .pack {
+          width: 100%;
+          margin-bottom: 20px; } }
+      main #explain .container .pack h3 {
+        background: #C3CFEB;
+        padding: 10px 10px; }
+      main #explain .container .pack p {
+        padding: 10px 20px; }
+
+footer {
+  text-align: center;
+  background: #ebdec3;
+  padding: 10px 0; }
+  footer a {
+    display: inline-block;
+    background: #C3CFEB;
+    padding: 10px 0;
+    width: 150px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,141 @@
+@import "compass";
+// font-family
+$baseFontFamily :"游ゴシック",
+YuGothic,
+"メイリオ",
+Verdana,
+"Hiragino Kaku Gothic ProN",
+Meiryo,
+sans-serif;
+
+// colors
+$baseColor: #ffffff;
+$subColor: #ebdec3;
+$keyColor: #C3CFEB;
+$fontColor: #6d4824;
+
+
+/* Base
+------------------------------------------------------------*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family: $baseFontFamily;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: $baseColor;
+}
+
+/* Align
+------------------------------------------------------------*/
+
+.text-center {
+  text-align: center;
+}
+
+/* Layout
+------------------------------------------------------------*/
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Font
+------------------------------------------------------------*/
+
+.abel {
+  font-family: 'Abel', sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Header
+------------------------------------------------------------*/
+
+.box {
+  background-image: url("../images/lesson7-kadai.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+
+  @media (max-width: 768px) {
+    height: 250px;
+  }
+}
+
+
+
+.title {
+  color: $fontColor;
+  font-size: 4.2rem;
+  font-family: $baseFontFamily;
+  line-height: 3.2;
+  letter-spacing: 0.1em;
+  text-align: center
+}
+
+main {
+  #explain {
+    margin-bottom: 30px;
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+
+      @media (max-width: 768px) {
+        flex-direction: column; // justify-content: center;
+        margin: 0 auto;
+        width: 90%;
+      }
+
+
+      .pack {
+        width: 30%;
+        @media (max-width: 768px) {
+          width: 100%;
+          margin-bottom: 20px;
+
+        }
+
+
+        background: $subColor;
+        h3 {
+          background: $keyColor;
+          padding: 10px 10px;
+        }
+        p {
+          padding: 10px 20px;
+        }
+
+      }
+
+    }
+
+
+  }
+}
+
+footer {
+  text-align: center;
+  background: $subColor;
+  padding: 10px 0;
+  a {
+    display: inline-block;
+    background: $keyColor;
+    padding: 10px 0;
+    width: 150px;
+    @include border-radius(4px);
+  }
+}
